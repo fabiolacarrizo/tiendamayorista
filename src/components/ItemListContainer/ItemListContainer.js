@@ -7,7 +7,6 @@ const ItemListContainer= ()=>{
         <div className="container-principal">
 <Carousel></Carousel>
 
-<h2>Categorias</h2>
 <Categories></Categories>
 
         </div>
