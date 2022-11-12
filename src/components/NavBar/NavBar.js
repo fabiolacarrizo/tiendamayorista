@@ -1,5 +1,6 @@
 import './NavBar.css'
 import logo2 from '../../Assets/Img/logo2.png'
+import menu from '../../Assets/Img/menu.png'
 import { Link } from 'react-router-dom'
 import bootstrap from 'bootstrap'
 import CartWidget from '../CartWidget/CartWidget'
@@ -11,6 +12,9 @@ const Navbar = () => {
 <div className='card_logo'> <Link to={'/'}> <img className='logo' src={logo2} ></img></Link> </div>
 
 <div className='card-botonesNav'>
+
+  <div className='menuhamburguesaimg'><img src={menu}></img></div>
+
 <ul class="nav nav-pills">
   <li class="nav-item dropdown">
   <div class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <Link to={'/'} className='boton_navbar'> Categorias </Link> </div> 

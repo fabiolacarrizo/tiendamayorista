@@ -3,6 +3,7 @@ import instagram from '../../Assets/Img/instagram.svg'
 import whatsapp from '../../Assets/Img/whatsapp.svg'
 import correo from '../../Assets/Img/correo.png'
 
+
 const Footer = () =>{
  return(
    <div className='card_footer' >  
@@ -27,6 +28,7 @@ const Footer = () =>{
 </div>
     
     </footer>
+ 
     </div>
  )
 }

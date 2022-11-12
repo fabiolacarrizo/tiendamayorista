@@ -8,7 +8,11 @@ nav{ background-color: #100720; height: 200px; width: 100%; display: flex; flex-
 
 .logo:hover{width: 160px; height: 160px; transition: 0.5s;}
 
-.button-categories{width: 50px; height: 20px; text-decoration: none; color: black; margin-left: 20%;  border-left: solid 1px #000000; }
+.menuhamburguesaimg{width: 50px; height: 40px; background-color: white; border-radius: 5px; display: none;}
+
+.menuhamburguesaimg img{width: 35px; height: 35px;}
+
+.button-categories{width: 50px; height: 20px; text-decoration: none; color: black;  border-left: solid 1px #000000; }
 
 .button-categories span{margin-left: 5px;}
 
@@ -16,7 +20,7 @@ nav{ background-color: #100720; height: 200px; width: 100%; display: flex; flex-
 
 .card-menuDespleglable{display: flex; flex-direction: row; width: 300px;}
 
-.card-botonesNav{display: flex; justify-content: center; align-items: center; margin-left: 30%;}
+.card-botonesNav{display: flex; justify-content: center; align-items: center;}
 
 
 
@@ -52,4 +56,17 @@ nav{ background-color: #100720; height: 200px; width: 100%; display: flex; flex-
     text-decoration: none;
    }
 
-   .card-cartWidget{right: 0%;}
+img{max-width: 100%;}
+
+
+
+   @media screen and (max-width: 767px) {
+
+
+ .nav{flex-direction: row; justify-content: center; align-items: center; width: 100%;}
+
+ .card-botonesNav{display: none;}
+
+ .menuhamburguesaimg{display: inline; position: absolute; top: 1rem; left: 2rem;}
+
+}

@@ -11,7 +11,7 @@ const CartWidget = () =>{
     <div className='cartWidget'>
   <img  src={iconocarrito} alt=""></img>
   <div >
-     <p className='contador' > <span>0</span></p>
+     <p className='contador' > </p>
 
   </div>
  </div> 
