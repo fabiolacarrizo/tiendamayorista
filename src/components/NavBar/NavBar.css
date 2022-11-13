@@ -12,11 +12,11 @@ nav{ background-color: #100720; height: 200px; width: 100%; display: flex; flex-
 
 .menuhamburguesaimg img{width: 35px; height: 35px;}
 
-.button-categories{width: 50px; height: 20px; text-decoration: none; color: black;  border-left: solid 1px #000000; }
+.button-categories{width: 50px; height: 20px; text-decoration: none; color: black;  border-left: solid 1px #000000; text-decoration: none; }
 
 .button-categories span{margin-left: 5px;}
 
-.button-categories:hover{font-size: 18px; text-decoration: none; color: #696568;}
+.button-categories:hover{font-size: 18px; text-decoration: none; color: #696568; }
 
 .card-menuDespleglable{display: flex; flex-direction: row; width: 300px;}
 

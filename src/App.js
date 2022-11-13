@@ -4,20 +4,29 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Footer from './components/Footer/Footer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import WidgetWhatsapp from './components/WidgetWhatsapp/WidgetWhatsapp';
+import SobreNosotros from '../src/components/SobreNosotros/SobreNosotros'
+import ItemDetailContainer from '../src/components/ItemDetailContainer/ItemDetailContainer'
+import Cart from './components/Cart/Cart';
+import CartProvider from './context/CartContext';
 
 function App() {
   return (
     <div className="App">
    
    <BrowserRouter>
+   <CartProvider>
    <NavBar></NavBar>
-    <ItemListContainer></ItemListContainer>
    <Routes>
-
-  <Route path='/' element={ItemListContainer}></Route>
+   <Route path='/' element={<ItemListContainer/>}/>  
+  <Route path='/sobrenosotros' element={<SobreNosotros/>}></Route>
+  <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+  <Route path='/category/:categoryId' element={<ItemListContainer/>}>  </Route>
+  <Route path= '/detail/:productId' element={<ItemDetailContainer/>}/> 
+  <Route path='/cart' element={<Cart/>} > </Route>
    </Routes>
   <Footer></Footer>
    <WidgetWhatsapp></WidgetWhatsapp>
+   </CartProvider>
    </BrowserRouter>
 
     </div>

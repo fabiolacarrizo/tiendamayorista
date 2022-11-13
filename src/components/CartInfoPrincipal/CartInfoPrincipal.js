@@ -7,6 +7,7 @@ return(
  
  <div className='cart-infoPrincipal'>
 <h4>Envios a todo el pais</h4>
+<p>Despachos </p>
  </div>
 
  <div className='cart-infoPrincipal'>
