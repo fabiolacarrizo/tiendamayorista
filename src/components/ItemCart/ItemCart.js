@@ -20,7 +20,7 @@ const ItemCart = ({ img, name , price, quantity, id, code, boxcont}) => {
                 <p>Cantidad: {boxcont * quantity}</p>   
                 <p>Precio:$ {price}c/u</p>
                 <p>Subtotal: ${quantity * boxcont * price}</p>
-                <button onClick={() => removeProduct(id)}> <img style={{width:60 , height:60}} src={deleteicon}></img></button>
+                <button className='button-delete' onClick={() => removeProduct(id)}> <img style={{width:60 , height:60}} src={deleteicon}></img></button>
             </div>
         </div>
     )
