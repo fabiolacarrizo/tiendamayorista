@@ -20,15 +20,15 @@ const Cart = () => {
 
 	return (
 		<div className="cart-Container">
-			<div className="card_todoslosproductos">
+			<div className="card_productosCarrito">
 			{
             cart.map((product) => <ItemCart key={product.id} {...product} />)
             }
            </div>
 			<p className="totalCard">Total: ${totalPrice()}</p>
 	     
-	<p className="buttons-itemcart" >	<Link className='out-underline' to='/'> <button><span> Seguir Comprando</span></button></Link> 
-	 <Link className='out-underline' to='/checkout'> <button><span> checkout </span></button></Link> </p>	 
+	<p className="buttons-itemcart" >	<Link className='out-underline' to='/'> <button className="button1"><span> Seguir Comprando</span></button></Link> 
+	 <Link to='/checkout'> <button className="button1"><span> checkout </span></button></Link> </p>	 
 			
 		</div>
 	);

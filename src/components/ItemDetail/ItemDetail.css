@@ -16,3 +16,16 @@ button{border: none;}
 .cart-botonesDetail button{margin: 10px; text-decoration: none;}
 
 .out-underline{text-decoration: none;}
+
+.cart-descriptionProduct{text-align: justify;}
+
+a{text-decoration: none;}
+
+.boton-consulta{transition: 0.5s;background-color: #100720; border-radius: 10px; width: 350px; height: 50px; display: flex; flex-direction: row; padding: 5px;}
+
+.boton-consulta p{color: white; font-size: 20px; margin: 3px; transition: 0.5s;}
+
+.boton-consulta img{display: none; margin-right: 0%; transition: 2s;}
+
+.boton-consulta:hover img{transition-duration: 2s; display: flex; width: 50px; height: 50px;  transition: 3s; margin-left: 30px;}
+

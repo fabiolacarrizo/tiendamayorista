@@ -2,23 +2,25 @@ import React from 'react';
 import { CartContext, useCartContext } from '../../context/CartContext';
 import { useContext } from 'react';
 import './ItemCart.css';
+import deleteicon from '../../../src/Assets/Img/deleteicon.png'
 
 
-const ItemCart = ({ img, name , price, quantity, id, code}) => {
+const ItemCart = ({ img, name , price, quantity, id, code, boxcont}) => {
 
     const { removeProduct } = useContext(CartContext);
 
     return (
         
         <div className='cart_detail'>
-        <img className='cart_detailImg' style={{width:70 , height:80}} src={img} alt={name} />
+        <img className='cart_detailImg'  src={img} alt={name} />
             <div className='cart_detailDatos'>
                 <p>Título: {name}</p>
                 <p>Codigo: DQ{code}</p>
-                <p>Cantidad: {quantity}</p>
-                <p>Precio:$ {price}</p>
-                <p>Subtotal: ${quantity * price}</p>
-                <button onClick={() => removeProduct(id)}> borrar</button>
+                <p>Cajas: {quantity}</p>
+                <p>Cantidad: {boxcont * quantity}</p>   
+                <p>Precio:$ {price}c/u</p>
+                <p>Subtotal: ${quantity * boxcont * price}</p>
+                <button onClick={() => removeProduct(id)}> <img style={{width:60 , height:60}} src={deleteicon}></img></button>
             </div>
         </div>
     )

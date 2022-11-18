@@ -3,8 +3,9 @@ import './ItemDetail.css'
 import { Link, useNavigate } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
 import { useState } from "react";
+import whatsapp from '../../Assets/Img/whatsapp.png'
 
-const ItemDetail = ({id, name, code, category, price, stockbox, img, description, data,}) =>{
+const ItemDetail = ({boxcont,id, name, code, category, price, stockbox, img, description, data,boxdescription}) =>{
   const [goCart, setGoCart] = useState(false);
   const { addItem } = useCartContext();
 
@@ -21,6 +22,8 @@ const OnAdd = (quantity) => {
             category,
             description,
             stockbox,
+            boxcont,
+            boxdescription
         }
 
         addItem(productToAdd, quantity)
@@ -33,24 +36,29 @@ const OnAdd = (quantity) => {
  return(
     <div className="card-detalleItem"> 
     <div className="card-detalleImgVolver">
-     <button  className="botonvolver" onClick={() => (navigate(-1)) }> Volver</button>
+   <button style={{width:100}}  className="button1" onClick={() => (navigate(-1)) }><span> Volver</span></button>
       <img style={{width:450, height:600}} src={img} alt=""></img>
     </div>
 
-     <div>
+     <div className='cart-descriptionProduct'>
       <h3>{name}</h3>
-      <h5>Codigo:{code}</h5>
-      <h5>Categoria:{category} </h5>
-      <h5>Descripcion: {description}</h5>
-      <p>${price}</p>
+      <h5>Codigo:DQ{code}</h5>
+      <h5>Descripcion: </h5>
+      <p>{description}</p>
+      <h5>Contenido de la Caja: {boxcont}u</h5>
+      <p>{boxdescription}</p>
+      <h6>Venta solo x Cajas</h6>
+      <p>${price} c/u</p>
 
       {
         goCart
-        ? ( <p className='cart-botonesDetail'> <Link className='out-underline' to={'/'} ><button> <span>Seguir Comprando</span></button> </Link>
-        <Link className='out-underline' to={'/cart'} > <button> <span>Finalizar Compra</span></button></Link> </p> )
+        ? ( <p className='cart-botonesDetail'> <Link className='out-underline' to={'/'} ><button className='button1'> <span>Seguir Comprando</span></button> </Link>
+        <Link className='out-underline' to={'/cart'} > <button className='button1'> <span>Finalizar Compra</span></button></Link> </p> )
          : <Counter onAdd={OnAdd} stockbox={stockbox}/>
       }
 
+      <button className='boton-consulta'> <img  src={whatsapp}></img><p>Consultar precio x Bulto</p> </button>
+  
       </div>
   </div>
  )

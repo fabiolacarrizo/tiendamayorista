@@ -38,7 +38,7 @@ if(loading) {
 
 
 return(
-    <div style={{backgroundColor: "#AEBDCA", padding:20, margin: 50, marginBottom:100}}>
+    <div className="detail-cart">
       <h1>Detalle del Producto</h1>
       <ItemDetail {...product} />
     </div>

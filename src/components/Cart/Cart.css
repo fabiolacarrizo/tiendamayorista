@@ -1,5 +1,7 @@
 .cart-Container{height: 100vh; align-items: center; justify-content: center; margin: 20px; }
 
+.card_productosCarrito{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
 .totalCard{font-size: 20px; }
 
 .cartButtons{margin-bottom: 20px;}
