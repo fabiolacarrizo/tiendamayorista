@@ -8,6 +8,7 @@ import SobreNosotros from '../src/components/SobreNosotros/SobreNosotros'
 import ItemDetailContainer from '../src/components/ItemDetailContainer/ItemDetailContainer'
 import Cart from './components/Cart/Cart';
 import CartProvider from './context/CartContext';
+import Checkout from '../src/components/Checkout/Checkout'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
   <Route path='/category/:categoryId' element={<ItemListContainer/>}>  </Route>
   <Route path= '/detail/:productId' element={<ItemDetailContainer/>}/> 
   <Route path='/cart' element={<Cart/>} > </Route>
+  <Route path='/checkout' element={<Checkout/>}></Route>
    </Routes>
   <Footer></Footer>
    <WidgetWhatsapp></WidgetWhatsapp>

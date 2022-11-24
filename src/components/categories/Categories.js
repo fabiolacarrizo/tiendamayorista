@@ -7,8 +7,9 @@ import fondoportada3 from '../../Assets/Img/fondoportada3.jpg'
 import varios from '../../Assets/Img/varios.png'
 import { Link } from 'react-router-dom'
 
-
 const Categories= ()=>{
+
+
     return(
         <div className='categories-container'>
 <Link to={'/category/mujer'}>
@@ -46,6 +47,7 @@ const Categories= ()=>{
 <img src={varios}></img> 
 <div className='categories-text'> <p className="btn draw-border">Varios</p> </div> </div>
 </Link>
+
 
         </div>
     )

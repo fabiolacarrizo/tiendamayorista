@@ -2,8 +2,10 @@ import './CartWidget.css'
 import iconocarrito from '../../Assets/Img/iconocarrito.png'
 import { Link } from 'react-router-dom'
 import React from "react";
+import { useCartContext } from "../../context/CartContext";
 
 const CartWidget = () =>{
+  const { totalProducts } = useCartContext();
 
  return (
 
@@ -11,7 +13,8 @@ const CartWidget = () =>{
     <div className='cartWidget'>
   <img  src={iconocarrito} alt=""></img>
   <div >
-     <p className='contador' > </p>
+
+     <p className='contador' > <span>{totalProducts() || ""}</span></p>
 
   </div>
  </div> 

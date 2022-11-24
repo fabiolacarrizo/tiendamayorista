@@ -4,9 +4,9 @@ import CartInfoPrincipal from "../CartInfoPrincipal/CartInfoPrincipal"
 import { getDocs, collection, query, where, orderBy} from 'firebase/firestore'
 import { db } from '../../service/firebase'
 import ItemList from '../ItemList/ItemList'
-//import { Link } from 'react-router-dom'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import './ItemListContainer.css'
 
 
 
@@ -14,13 +14,13 @@ const ItemListContainer= ()=>{
 
     const [products, setProducts] = useState([])
     const [loading, setLoading] =useState(true) 
+    const [renderProducts, setRenderProducts]=useState(false)
   
     const {categoryId} = useParams()
-    const {machine} = useParams()
-    const {sale} = useParams()
   
   useEffect(()=>{
     setLoading(true)
+      
   
   const collectionRef = categoryId 
   ? query (collection(db, 'products'), where('category', '==', categoryId))
@@ -43,12 +43,14 @@ const ItemListContainer= ()=>{
     return(
         <div className="container-principal">
 <Carousel></Carousel>
-<Categories></Categories>
-<ItemList products={products}/>
-<CartInfoPrincipal></CartInfoPrincipal>
-        </div>
+<Categories></Categories> 
+<ItemList  products={products} />
+<CartInfoPrincipal></CartInfoPrincipal>  
+
+
+
+      </div>
     )
 }
-
 
 export default ItemListContainer
