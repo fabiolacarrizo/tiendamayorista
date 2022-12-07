@@ -9,8 +9,10 @@ const Navbar = () => {
     return (
         <nav> 
 <div className='card_logo'> <Link to={'/'}> <img className='logo' src={logo2} ></img></Link> </div>
-
+  
 <div className='card-botonesNav'>
+
+
 
   <div className='menuhamburguesaimg'><img src={menu}></img></div>
 
@@ -33,10 +35,12 @@ const Navbar = () => {
 </ul>
     <Link className='boton_navbar'>Informacion </Link>
     <Link className='boton_navbar' to={'/sobrenosotros'}>Sobre Nosotros</Link>
-    <Link className='boton_navbar'>Contacto</Link>
-    
-     <span className='card-cartWidget'><CartWidget></CartWidget></span>
-</div>
+    <Link className='boton_navbar' to={'/contacto'}>Contacto</Link>
+
+
+  <p ></p> 
+     <span className='card-cartWidget'><input className='barra-buscar' placeholder='Buscar' ></input> <CartWidget></CartWidget>  </span>
+</div> 
 
         </nav>
     )

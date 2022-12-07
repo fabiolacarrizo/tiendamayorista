@@ -10,6 +10,8 @@ const ItemDetail = ({boxcont,id, name, code, category, price, stockbox, img, des
   const { addItem } = useCartContext();
 
 
+
+
 const OnAdd = (quantity) => {
   setGoCart(true);
 
@@ -32,6 +34,7 @@ const OnAdd = (quantity) => {
 
   const navigate = useNavigate()
 
+const preciocaja= price * boxcont
 
  return(
     <div className="card-detalleItem"> 
@@ -45,10 +48,11 @@ const OnAdd = (quantity) => {
       <h5>Codigo:DQ{code}</h5>
       <h5>Descripcion: </h5>
       <p>{description}</p>
-      <h5>Contenido de la Caja: {boxcont}u</h5>
-      <p>{boxdescription}</p>
+      <h5>Contenido de la Caja: {boxcont}u</h5> 
+      <p>{boxdescription} ${price} c/u   </p>
       <h6>Venta solo x Cajas</h6>
-      <p>${price} c/u</p>
+    <p>${preciocaja}</p>
+       
 
       {
         goCart

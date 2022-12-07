@@ -1,0 +1,16 @@
+.container-contacto{background-image: url('../../Assets/Img/portada2.jpg'); height: 100vh; padding-top: 20px;}
+
+.container-contacto h2{margin: 30px;}
+
+.cart-contactoform{ display: flex; flex-direction: column;color: rgb(0, 0, 0); text-align:justify; width: 700px; margin-left: 30%; padding: 30px; font-size: 18px;  background: rgba(246, 239, 244, 0.75); border-radius: 20px; }
+
+.cart-contactoform button{width: 100px; margin-left: 300px; margin-top: 10px;}
+
+.cart-contactoform label{margin-right: 10px;}
+
+.cart-contactoform input{background:none; border-top:0px; border-left: 0px; margin-bottom: 10px;}
+
+.cart-contactoform textarea{background:none; border-top:0px; border-left: 0px;}
+
+
+

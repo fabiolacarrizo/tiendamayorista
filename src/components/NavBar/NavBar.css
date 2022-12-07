@@ -20,8 +20,9 @@ nav{ background-color: #100720; height: 200px; width: 100%; display: flex; flex-
 
 .card-menuDespleglable{display: flex; flex-direction: row; width: 300px;}
 
-.card-botonesNav{display: flex; justify-content: center; align-items: center;}
+.card-botonesNav{display: flex; justify-content: center; align-items: center; margin-left: 20%;}
 
+.barra-buscar{background: none; border-top: 0px; align-items: flex-start; border-radius: 5px; margin-left: 100px; color: white; width: 200px; }
 
 
 .boton_navbar{

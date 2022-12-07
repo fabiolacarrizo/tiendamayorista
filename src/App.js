@@ -9,6 +9,7 @@ import ItemDetailContainer from '../src/components/ItemDetailContainer/ItemDetai
 import Cart from './components/Cart/Cart';
 import CartProvider from './context/CartContext';
 import Checkout from '../src/components/Checkout/Checkout'
+import Contacto from './components/Contacto/Contacto';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
   <Route path= '/detail/:productId' element={<ItemDetailContainer/>}/> 
   <Route path='/cart' element={<Cart/>} > </Route>
   <Route path='/checkout' element={<Checkout/>}></Route>
+  <Route path='/contacto' element={<Contacto/>}></Route>
    </Routes>
   <Footer></Footer>
    <WidgetWhatsapp></WidgetWhatsapp>
