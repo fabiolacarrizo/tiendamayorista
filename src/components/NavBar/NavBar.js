@@ -1,5 +1,6 @@
 import './NavBar.css'
 import logo2 from '../../Assets/Img/logo2.png'
+import search from '../../Assets/Img/search.png'
 import menu from '../../Assets/Img/menu.png'
 import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
@@ -7,6 +8,8 @@ import CartWidget from '../CartWidget/CartWidget'
 
 const Navbar = () => {
     return (
+
+    <header>
         <nav> 
 <div className='card_logo'> <Link to={'/'}> <img className='logo' src={logo2} ></img></Link> </div>
   
@@ -37,12 +40,14 @@ const Navbar = () => {
     <Link className='boton_navbar' to={'/sobrenosotros'}>Sobre Nosotros</Link>
     <Link className='boton_navbar' to={'/contacto'}>Contacto</Link>
 
+      <span className='barra-buscar'>  <img className='icono-buscar' src={search}></img> <input  placeholder='Buscar' ></input> </span> 
 
-  <p ></p> 
-     <span className='card-cartWidget'><input className='barra-buscar' placeholder='Buscar' ></input> <CartWidget></CartWidget>  </span>
+       <span className='card-cartWidget'>
+        <CartWidget></CartWidget>  </span> 
 </div> 
 
         </nav>
+        </header>  
     )
 }
 

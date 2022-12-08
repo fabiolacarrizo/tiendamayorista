@@ -1,4 +1,8 @@
-
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
 .form-container{ height: 100%; margin-top: 20px; margin-bottom: 70px;}
 .formCheckout{display: flex; flex-direction: column; justify-content:center; justify-items: center; align-items: center;  }
 

@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+
 .card-detalleItem{display: flex; align-items: center; justify-content: center; margin-bottom: 100px; height: 100%; } 
 
 .card-detalleItem img{margin-right: 150px;}
