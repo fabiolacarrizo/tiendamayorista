@@ -64,7 +64,7 @@ Swal.fire({
 	}
 
     return(
-        <div className="checkout-container">
+        <div className="checkout-container" >
             <h1>Finalizar Compra</h1>
         
 

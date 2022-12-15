@@ -3,8 +3,8 @@
     margin: 0;
   }
   
-.form-container{ height: 100%; margin-top: 20px; margin-bottom: 70px;}
-.formCheckout{display: flex; flex-direction: column; justify-content:center; justify-items: center; align-items: center;  }
+.form-container{ height: 100%; margin-top: 20px; margin-bottom: 70px; padding-bottom: 300px;}
+.formCheckout{display: flex; flex-direction: column; justify-content:center; justify-items: center; align-items: center;}
 
 .formCheckout p{margin:20px; }
 

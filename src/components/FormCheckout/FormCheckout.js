@@ -94,7 +94,7 @@ const submit = (e) => {
 <input value={checkEmail} onChange={(e) => setCheckEmail(e.target.value)} type='email' placeholder='Correo'  required></input></p>
 </div>
 
-<div className='datosEnvio'>
+<div className='datosEnvio' >
 
 <h4>Datos para Envio</h4>
 
