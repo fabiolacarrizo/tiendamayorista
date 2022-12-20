@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className='card-menuDespleglable'>
     <ul>
       <li><Link className='button-categories'  to={'/category/mujer'}><span>Mujer</span> </Link></li>
-      <li><Link className='button-categories' to={'/category/Hombre'}><span>Hombre</span></Link></li>
+      <li><Link className='button-categories' to={'/category/hombre'}><span>Hombre</span></Link></li>
       <li> <Link className='button-categories' to={'/category/infantil'}><span>Niños</span></Link></li> 
      </ul>
         <ul>
