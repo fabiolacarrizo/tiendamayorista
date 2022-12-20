@@ -12,8 +12,9 @@ const ItemCart = ({ img, name , price, quantity, id, code, boxcont}) => {
     return (
         
         <div className='cart_detail'>
-        <img className='cart_detailImg'  src={img} alt={name} />
-            <div className='cart_detailDatos'>
+       
+            <div className='cart_detailDatos'> 
+            <img className='cart_detailImg'  src={img} alt={name} />
                 <p>Título: {name}</p>
                 <p>Codigo: DQ{code}</p>
                 <p>Cajas: {quantity}</p>

@@ -13,11 +13,11 @@ const Navbar = () => {
         <nav> 
 <div className='card_logo'> <Link to={'/'}> <img className='logo' src={logo2} ></img></Link> </div>
   
+   <div className='menuhamburguesaimg'><img src={menu}></img></div> 
+
 <div className='card-botonesNav'>
 
 
-
-  <div className='menuhamburguesaimg'><img src={menu}></img></div>
 
 <ul class="nav nav-pills">
   <li class="nav-item dropdown">
@@ -40,12 +40,13 @@ const Navbar = () => {
     <Link className='boton_navbar' to={'/sobrenosotros'}>Sobre Nosotros</Link>
     <Link className='boton_navbar' to={'/contacto'}>Contacto</Link>
 
-      <span className='barra-buscar'>  <img className='icono-buscar' src={search}></img> <input  placeholder='Buscar' ></input> </span> 
-
-       <span className='card-cartWidget'>
-        <CartWidget></CartWidget>  </span> 
+       
+<span className='barra-buscar'>  <img className='icono-buscar' src={search}></img> <input  placeholder='Buscar' ></input> </span>
+    
 </div> 
 
+   <span className='card-cartWidget'>
+        <CartWidget></CartWidget>  </span> 
         </nav>
         </header>  
     )

@@ -21,11 +21,11 @@
 
 @media screen and (max-width: 767px) {
 
-    .container-contacto{background-image: url('../../Assets/Img/portada2.jpg'); height: 100vh; padding-top: 10px;}
+    .container-contacto{background-image: url('../../Assets/Img/portada2.jpg'); height: 100vh; padding-top: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
    
-    .container-contacto h2{margin: 10px;}
+    .container-contacto h2{margin: 10px; }
 
-    .cart-contactoform{ display: flex; flex-direction: column;color: rgb(0, 0, 0); text-align:justify; width: 400px;  padding: 30px; font-size: 18px; margin-left: 15%; background: rgba(246, 239, 244, 0.75); border-radius: 10px; }
+    .cart-contactoform{ display: flex; flex-direction: column;color: rgb(0, 0, 0); text-align:justify; width: 90%;  padding: 30px; font-size: 18px; margin-left: 5%; background: rgba(246, 239, 244, 0.75); border-radius: 10px; }
     
     .cart-contactoform button{width: 100px; margin-left: 30px; margin-top: 10px;}
     

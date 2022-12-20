@@ -40,7 +40,7 @@ const preciocaja= price * boxcont
     <div className="card-detalleItem"> 
     <div className="card-detalleImgVolver">
    <button style={{width:100}}  className="button1" onClick={() => (navigate(-1)) }><span> Volver</span></button>
-      <img style={{width:450, height:600}} src={img} alt=""></img>
+      <img  src={img} alt=""></img>
     </div>
 
      <div className='cart-descriptionProduct'>

@@ -5,7 +5,7 @@
 
 .card-detalleItem{display: flex; align-items: center; justify-content: center; margin-bottom: 100px; height: 100%; } 
 
-.card-detalleItem img{margin-right: 150px;}
+.card-detalleItem img{margin-right: 150px; width: 450px; height: 600px;}
 
 .botonvolver{background-color: #5F6F94; margin: 10px; color: #97D2EC; box-shadow: 5px 2px 4px 2px #5F6F94; text-decoration: none;
     width: 80px; height: 30px;}
@@ -34,3 +34,35 @@ a{text-decoration: none;}
 
 .boton-consulta:hover img{transition-duration: 2s; display: flex; width: 50px; height: 50px;  transition: 3s; margin-left: 30px;}
 
+@media screen and (max-width: 767px) {
+    
+  .card-detalleItem{padding: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+  
+  .card-detalleItem img{margin-right: 150px; width: 350px; height: 500px;}
+      
+  .card-detalleImgVolver{margin: 2px;  margin-left: 5px;}
+  
+  button{border: none;}
+  
+  .cart-botonesDetail{display: flex; flex-direction: row; text-decoration: none;}
+  
+  .cart-botonesDetail button{margin: 10px; text-decoration: none;}
+  
+  .out-underline{text-decoration: none;}
+  
+  .cart-descriptionProduct{text-align: justify; font-size: 15px;}
+  
+  a{text-decoration: none;}
+  
+  .boton-consulta{transition: 0.5s;background-color: #100720; border-radius: 10px; width: 350px; height: 50px; display: flex; flex-direction: row; padding: 5px;}
+  
+  .boton-consulta p{color: white; font-size: 20px; margin: 3px; transition: 0.5s;}
+  
+  .boton-consulta img{display: none; margin-right: 0%; transition: 2s;}
+  
+  .boton-consulta:hover img{transition-duration: 2s; display: flex; width: 50px; height: 50px;  transition: 3s; margin-left: 30px;}
+  
+
+
+
+}

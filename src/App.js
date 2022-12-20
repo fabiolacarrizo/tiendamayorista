@@ -28,7 +28,7 @@ function App() {
   <Route path='/checkout' element={<Checkout/>}></Route>
   <Route path='/contacto' element={<Contacto/>}></Route>
    </Routes>
-  <Footer></Footer>
+   <Footer></Footer>
    <WidgetWhatsapp></WidgetWhatsapp>
    </CartProvider>
    </BrowserRouter>

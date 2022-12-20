@@ -28,14 +28,15 @@ ul li:hover{text-decoration: underline; color: white;}
 @media screen and (max-width: 767px) {
     
   footer{
-    position: absolute;
+    display: none;
+position: absolute;
    bottom: 0;
    width: 100%;
 
 }
-.card_footer{ position: relative; bottom: 0; background-color: black; padding-top: 20px; display: flex; flex-direction: column; justify-content: center;  font-size: 16px;   background-color: black; height: 180px;width: 100%; margin: 0%; }
+.card_footer{ display: none; position: absolute; bottom: 0; background-color: black; padding-top: 20px; display: block flex; flex-direction: column; justify-content: center;  font-size: 16px;  height: 180px;width: 100%; margin: 0%; }
 
-.card_footerItem{background-color: black; padding-top: 20px; display: flex; flex-direction: column; justify-content: center;  font-size: 16px;   background-color: black; height: 180px;width: 100%; margin: 0%;}
+.card_footerItem{ background-color: black; padding-top: 20px; display: flex; flex-direction: column; justify-content: center;  font-size: 16px;   height: 180px;width: 100%; margin: 0%;}
 
 ul li{list-style: none; color: white; }
 
