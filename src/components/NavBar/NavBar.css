@@ -80,6 +80,6 @@ img{max-width: 100%;}
 
  .card-botonesNav{display: none;}
 
- .menuhamburguesaimg{display: inline; position: absolute; top: 1rem; left: 2rem;}
+ .menuhamburguesaimg{display: inline; position: absolute; top: 1rem; left: 2rem; background-color: aliceblue;}
 
 }

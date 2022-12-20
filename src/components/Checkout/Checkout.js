@@ -65,7 +65,7 @@ Swal.fire({
 
     return(
         <div className="checkout-container" >
-            <h1>Finalizar Compra</h1>
+            <h1 className="titulo-finalizarcompra">Finalizar Compra</h1>
         
 
 	 {	 personalData ? 	(<button onClick={handleClick}>Emitir Compra</button>  )  : 

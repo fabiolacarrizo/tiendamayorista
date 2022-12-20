@@ -1,5 +1,5 @@
 import portada1 from '../../Assets/Img/portada1.jpg'
-import portada2 from '../../Assets/Img/portada2.jpg'
+import c1 from '../../Assets/Img/c1.jpg'
 import portada3 from '../../Assets/Img/portada3.jpg'
 import './Carousel.css'
 import bootstrap from 'bootstrap'
@@ -19,7 +19,7 @@ const Carousel =  () => {
 <img src={portada1}></img>
     </div>
     <div className="carousel-item">
-    <img src={portada2}></img>
+    <img src={c1}></img>
     </div>
     <div className="carousel-item">
     <img src={portada3}></img>
