@@ -9,9 +9,6 @@ const ItemDetail = ({boxcont,id, name, code, category, price, stockbox, img, des
   const [goCart, setGoCart] = useState(false);
   const { addItem } = useCartContext();
 
-
-
-
 const OnAdd = (quantity) => {
   setGoCart(true);
 
@@ -40,7 +37,7 @@ const preciocaja= price * boxcont
     <div className="card-detalleItem"> 
     <div className="card-detalleImgVolver">
    <button style={{width:100}}  className="button1" onClick={() => (navigate(-1)) }><span> Volver</span></button>
-      <img  src={img} alt=""></img>
+      <img src={img} alt=""></img>
     </div>
 
      <div className='cart-descriptionProduct'>

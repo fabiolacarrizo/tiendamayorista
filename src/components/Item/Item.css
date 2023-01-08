@@ -1,4 +1,4 @@
-.card_productos{margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 325px; height: 570px; margin-bottom: 100px;}
+.card_productos{margin: 20px; box-shadow: 1px 1px 5px 0px black; width: 325px; height: 570px; margin-bottom: 50px;}
 
 .card_productosImg{width: 300px; height: 400px; margin: 5px;}
 
@@ -7,7 +7,7 @@
 .boton-detalle:hover{color: white; background-color: palevioletred;}
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px), (max-width: 1080px) {
 
     .card_productos{margin: 10px; box-shadow: 1px 1px 5px 0px black; width: 150px; height: 280px; margin-bottom: 20px; font-size: 12px;}
 

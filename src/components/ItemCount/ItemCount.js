@@ -24,10 +24,11 @@ const disminuir= () =>{
 
 
     <p className='cart-buttoncount'> 
+
             <button className='button1' onClick={disminuir}><span> - </span> </button>
                  <span>{quantity}</span>
             <button className='button1' onClick={incrementar}><span> + </span></button>
-            
+           
         <button className='button1' onClick={() => onAdd(quantity)}> <span>Agregar Al Carrito</span> </button> </p>
 
         </div>
